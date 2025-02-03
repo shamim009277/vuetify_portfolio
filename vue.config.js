@@ -4,7 +4,10 @@ module.exports = defineConfig({
 
   pluginOptions: {
     vuetify: {
-			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
+			base: '/vuetify_portfolio',  // এখানে 'repository-name' আপনার GitHub রিপোজিটরির নাম হবে
+      build: {
+        outDir: 'dist',  // ভিউ প্রোজেক্টের বিল্ড ফোল্ডার
+      },
 		}
   }
 })
